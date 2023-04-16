@@ -21,7 +21,7 @@ function updateTime() {
 }
 
 //Updating the time every minute as per the requirenment
-setInterval(updateTime, 6000);
+setInterval(updateTime, 60000);
 
 //Creating the server
 const server = http.createServer((req, res) => {
