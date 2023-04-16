@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
   console.log("Response: " + res.statusCode);
   res.setHeader("Content.Type", "text/plain");
   res.write(
-    "<html><body><center><h1>Todays time is:</h1><h3>(Updated every minute)</h3></body><center></html>"
+    "<html><body><center><h1>The time of today is:</h1><h3>(Updated every minute)</h3></body><center></html>"
   );
   res.write(currentTimeAsString);
   res.end();
